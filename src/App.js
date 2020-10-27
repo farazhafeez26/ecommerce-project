@@ -21,6 +21,15 @@ function App() {
       <div>
         <h1>My Ecommerce Store</h1>
       </div>
+      <div>
+        <div> Product 1
+        </div>
+        <div> Product 2 
+        </div>
+        <div> Product 3 
+        </div>
+
+      </div>
     </div>
   );
 }
