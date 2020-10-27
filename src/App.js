@@ -28,6 +28,8 @@ function App() {
         </div>
         <div> Product 3 
         </div>
+        <div> Product 4
+        </div>
 
       </div>
     </div>
