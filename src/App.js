@@ -15,9 +15,12 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React today
         </a>
       </header>
+      <div>
+        <h1>My Ecommerce Store</h1>
+      </div>
     </div>
   );
 }
