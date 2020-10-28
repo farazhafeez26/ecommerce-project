@@ -9,7 +9,8 @@ function App() {
         <h1>My Ecommerce Store</h1>
       </div>
       <div>
-        <Product name="Flamenco Guitar"> </Product>
+        <Product name="Flamenco Guitar"> sadas</Product>
+        <button> What? </button>
         <Product name="Classical Guitar"></Product>
         <Product name="Drums"></Product>
         <Product name="Microphone"></Product>
@@ -17,6 +18,9 @@ function App() {
         <Product name="Drums"></Product>
         <Product name="Microphone"></Product>
         <Product name="Tuner"></Product>
+        
+
+        <h1>Limited Stock! Hurry</h1>
 
          
 
