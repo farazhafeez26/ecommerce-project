@@ -5,10 +5,18 @@ export default function Product(props) {
     // State is owned by the component
     const [quantity, setQuantity] = useState(1);  // Array Destructuring 
     return (
-        <div>
+        <div  >
             <h4>  {props.name} </h4>
+          
             <span>{quantity}</span>
             <button onClick={() => (setQuantity(quantity+1))}>Add to cart</button>
+            <button onClick={() => (setQuantity(quantity-1))}>remove</button>
+         
         </div>
     )
 }
+
+
+//questions -28th Oct
+//What is setQuantity, userstate? 
+//what is export default, "}"?
