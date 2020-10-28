@@ -9,10 +9,16 @@ function App() {
         <h1>My Ecommerce Store</h1>
       </div>
       <div>
-        <Product name="Falmenco Guitarr"></Product>
-        <Product name="Classical Guitarr"></Product>
+        <Product name="Flamenco Guitar"> </Product>
+        <Product name="Classical Guitar"></Product>
         <Product name="Drums"></Product>
         <Product name="Microphone"></Product>
+        <Product name="Amplifier"></Product>
+        <Product name="Drums"></Product>
+        <Product name="Microphone"></Product>
+        <Product name="Tuner"></Product>
+
+         
 
       </div>
     </div>
@@ -20,3 +26,4 @@ function App() {
 }
 
 export default App;
+ 
