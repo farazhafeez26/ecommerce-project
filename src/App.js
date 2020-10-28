@@ -6,11 +6,10 @@ function App() {
   return (
     <div className="App">
       <div>
-        <h1>My Ecommerce Store</h1>
+        <h1>Das Flea Bazaar</h1>
       </div>
-      <div>
-        <Product name="Flamenco Guitar"> sadas</Product>
-        <button> What? </button>
+      <div style={{left:"center"}}>
+        <Product name="Flamenco Guitar" style={{color:"red" }} >?????</Product>
         <Product name="Classical Guitar"></Product>
         <Product name="Drums"></Product>
         <Product name="Microphone"></Product>
