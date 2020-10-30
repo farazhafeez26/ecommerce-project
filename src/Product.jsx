@@ -7,7 +7,7 @@ export default function Product(props) {
   // State is owned by the component
   const [quantity, setQuantity] = useState(1); // Array Destructuring
   return (
-    <div class="display-items">
+    <div className="display-items">
       <h4 style={{ color: "white" }}> {props.name} </h4>
       <img src={props.imgSrc} className="product-image"></img>
 

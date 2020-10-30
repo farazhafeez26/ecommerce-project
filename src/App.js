@@ -14,10 +14,10 @@ function App() {
             price={200}
             shipping="standard"
           >
-            {" "}
+           
           </Product>{" "}
           {/* try to avoid inline css, write them on in css file */}
-          <Product name="Classical Guitar"></Product>
+          <Product name="Classical Guitar" imgSrc="pictures/guitar.jpg"></Product>
           <Product name="Drums" price={300}></Product>
           <Product name="Microphone" price={250}></Product>
           <Product name="Amplifier" price={210}></Product>
