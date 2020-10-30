@@ -1,13 +1,23 @@
-.price-tag{
-  color: green;
+.price-tag {
+  color:white;
 }
 
-
-.product-image{
+.product-image {
   max-width: 90%;
 }
 
-.center-items{
+.wrapper {
+  display: flex;
+ flex-basis: auto;
+  flex-direction: column;
+  align-items: center;
+}
 
-align-items: center;
+
+.display-items {
+
+  background: "#F44E3F";
+  max-width: "200px";
+  height: "400px";
+  align-items: "center";
 }
