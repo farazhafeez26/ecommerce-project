@@ -23,7 +23,7 @@ function App() {
           <Product name="Amplifier" price={210}></Product>
           <Product name="Drums" price={4500}></Product>
           <Product name="Microphone" price={200}></Product>
-          <Product name="Tuner" price={200}></Product>
+           
           <h1>Limited Stock! Hurry</h1>
         </div>
       </div>
