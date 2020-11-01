@@ -30,8 +30,9 @@ function App() {
   );
 }
 
-const MainTitle= styled.h2`
+const MainTitle= styled.h1`
 text-align:center;
+margin:10px;
 `;
 
 

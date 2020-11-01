@@ -43,11 +43,13 @@ const Quantity = styled.h3`
 const QuantityContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  text-align:center;
 `;
 
 const InfoContainer = styled.div`
   display: flex;
   justify-content: space-between;
+ 
 `;
 
 const QtyButton = styled.button`
