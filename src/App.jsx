@@ -2,11 +2,12 @@ import logo from "./logo.svg";
 import "./App.css";
 import Product from "./Product";
 import Size from "./Size";
+import styled from "styled-components";
 
 function App() {
   return (
     <div className="App">
-       <h1>Das Flea Bazaar</h1>
+      <MainTitle>  Das Flea Bazaar </MainTitle>
       <div className="container">
        
         <Product
@@ -17,17 +18,23 @@ function App() {
         ></Product>
         
         <Product name="Drums" imgSrc="pictures/drums.jpg" price={300} shipping={"standard"} size={"M"}></Product>
-        <Product name="Microphone" imgSrc="pictures/mic.jpg" price={250}></Product>
-        <Product name="Amplifier" imgSrc="pictures/amplfier.jfif"price={210}></Product>
-        <Product name="Electric Guitar" imgSrc="pictures/eguitar.jfif" price={4500}></Product>
-        <Product name="Speaker" imgSrc="pictures/speaker.jfif" price={200}></Product>
+        <Product name="Microphone" imgSrc="pictures/mic.jpg" price={250} shipping={"standard"} size={"M"}></Product>
+        <Product name="Amplifier" imgSrc="pictures/amplfier.jfif"price={210} shipping={"standard"} size={"M"}></Product>
+        <Product name="Electric Guitar" imgSrc="pictures/eguitar.jfif" price={4500} shipping={"standard"} size={"M"}></Product>
+        <Product name="Speaker" imgSrc="pictures/speaker.jfif" price={200} shipping={"standard"} size={"M"}></Product>
 
       </div>
       
-      <h1>Limited Stock Hurry!</h1>
+ 
     </div>
   );
 }
+
+const MainTitle= styled.h2`
+text-align:center;
+`;
+
+
 
 export const test = "test";
 
