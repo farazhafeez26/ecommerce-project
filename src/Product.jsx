@@ -57,7 +57,4 @@ const QtyButton = styled.button`
   border-radius: 3px;
 `;
 //questions
-//how can i include in multiple properties of a product in one JSX file. For example shipping and price in one js file ?
-// align items is not working
-
-// How is spacing being allocated between the elements being allocated?
+ //how to add pseudo css elements

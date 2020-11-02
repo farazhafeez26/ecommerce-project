@@ -8,6 +8,11 @@ function App() {
   return (
     <div className="App">
       <MainTitle>  Das Flea Bazaar </MainTitle>
+
+
+<SearchBar><input placeholder="🔍 Search"  ></input> </SearchBar>
+
+
       <div className="container">
        
         <Product
@@ -35,7 +40,15 @@ text-align:center;
 margin:10px;
 `;
 
-
+const SearchBar=styled.h2`
+text-align:center;
+margin:10px;
+border-radius:5px;
+font-size:20px;
+ 
+ 
+ 
+`;
 
 export const test = "test";
 
