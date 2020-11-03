@@ -16,7 +16,7 @@ function App() {
       <div className="container">
         <Product
           name="Flamenco Guitar"
-          imgSrc="pictures/guitar.jpg"
+          imgSrc="pic1.jpg"
           price={200}
           shipping="standard"
         ></Product>
@@ -49,13 +49,7 @@ function App() {
           shipping={"standard"}
           size={"M"}
         ></Product>
-        <Product
-          name="Speaker"
-          imgSrc="pictures/speaker.jfif"
-          price={200}
-          shipping={"standard"}
-          size={"M"}
-        ></Product>
+        
       </div>
     </div>
   );
