@@ -2,32 +2,74 @@ import logo from "./logo.svg";
 import "./App.css";
 import Product from "./Product";
 import Size from "./Size";
+import styled from "styled-components";
 
 function App() {
   return (
     <div className="App">
-       <h1>Das Flea Bazaar</h1>
+      <MainTitle> Das Flea Bazaar </MainTitle>
+
+      <SearchBar placeholder="🔍 Search" type="text">
+        
+      </SearchBar>
+
       <div className="container">
-       
         <Product
           name="Flamenco Guitar"
-          imgSrc="pictures/guitar.jpg"
+          imgSrc="pic1.jpg"
           price={200}
           shipping="standard"
         ></Product>
-        
-        <Product name="Drums" imgSrc="pictures/drums.jpg" price={300} shipping={"standard"} size={"M"}></Product>
-        <Product name="Microphone" imgSrc="pictures/mic.jpg" price={250}></Product>
-        <Product name="Amplifier" imgSrc="pictures/amplfier.jfif"price={210}></Product>
-        <Product name="Electric Guitar" imgSrc="pictures/eguitar.jfif" price={4500}></Product>
-        <Product name="Speaker" imgSrc="pictures/speaker.jfif" price={200}></Product>
 
+        <Product
+          name="Drums"
+          imgSrc="pictures/drums.jpg"
+          price={300}
+          shipping={"standard"}
+          size={"M"}
+        ></Product>
+        <Product
+          name="Microphone"
+          imgSrc="pictures/mic.jpg"
+          price={250}
+          shipping={"standard"}
+          size={"M"}
+        ></Product>
+        <Product
+          name="Amplifier"
+          imgSrc="pictures/amplfier.jfif"
+          price={210}
+          shipping={"standard"}
+          size={"M"}
+        ></Product>
+        <Product
+          name="Electric Guitar"
+          imgSrc="pictures/eguitar.jfif"
+          price={4500}
+          shipping={"standard"}
+          size={"M"}
+        ></Product>
+        
       </div>
-      
-      <h1>Limited Stock Hurry!</h1>
     </div>
   );
 }
+
+const MainTitle = styled.h1`
+  text-align: center;
+  margin: 10px;
+`;
+
+const SearchBar = styled.input`
+  text-align: left;
+  margin: 10px;
+  height:48px;
+  border-radius: 24px;
+  width:50%;
+  font-size: 20px;
+  background-color:#efefef;
+
+`;
 
 export const test = "test";
 

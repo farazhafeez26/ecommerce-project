@@ -2,10 +2,6 @@
   color: white;
 }
 
-.product-image {
-  max-width: 50%;
-}
-
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -16,12 +12,15 @@
 }
 
 .boxitem {
-  background-color: #F44E3F;
+  background-color:  #F2F5FF;
   margin: 5px;
   padding: 5px;
   border-radius: 5px;
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 400px;
   align-items: center;
+ 
+
+   
   flex-flow: row wrap;
 }
