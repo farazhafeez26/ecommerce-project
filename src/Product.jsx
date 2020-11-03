@@ -10,9 +10,7 @@ export default function Product(props) {
   const [quantity, setQuantity] = useState(1); // Array Destructuring
   return (
     <div className="boxitem">
-      <div>
-        <h4 style={{ color: "black" }}> {props.name} </h4>
-      </div>
+  
       <ImageContainer>
         <ProductImage
           src={props.imgSrc}
@@ -31,8 +29,7 @@ export default function Product(props) {
 
         <InfoContainer>
           <Price value={props.price}> </Price>
-          <Shipping value={props.shipping}></Shipping>
-          <Size value={props.size}></Size>
+       
         </InfoContainer>
       </div>
     </div>
