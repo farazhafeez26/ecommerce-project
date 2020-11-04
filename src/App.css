@@ -5,22 +5,22 @@
 .container {
   display: flex;
   flex-wrap: wrap;
+  flex-direction:row;
+  align-items: center ;
   flex-basis: auto;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+ 
+  
 }
 
 .boxitem {
-  background-color:  #F2F5FF;
+  
   margin: 5px;
   padding: 5px;
   border-radius: 5px;
   width: 350px;
-  height: 400px;
-  align-items: center;
+  height:500px;
+  
  
 
-   
-  flex-flow: row wrap;
+  
 }
