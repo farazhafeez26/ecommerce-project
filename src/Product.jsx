@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Price from "./Price";
-import Shipping from "./Shipping";
-import Size from "./Size";
+
 import styled from "styled-components";
 
 export default function Product(props) {
@@ -10,15 +9,9 @@ export default function Product(props) {
   const [quantity, setQuantity] = useState(1); // Array Destructuring
   return (
     <div className="boxitem">
-  
       <ImageContainer>
-        <ProductImage
-          src={props.imgSrc}
-          className="product-image"
-        ></ProductImage>
-      </ImageContainer>
+        <ProductImage src={props.imgSrc}></ProductImage>
 
-      <div>
         <QuantityContainer>
           <QtyButton onClick={() => setQuantity(quantity + 1)}>
             Add to cart
@@ -26,12 +19,7 @@ export default function Product(props) {
 
           <Quantity>{quantity}</Quantity>
         </QuantityContainer>
-
-        <InfoContainer>
-          <Price value={props.price}> </Price>
-       
-        </InfoContainer>
-      </div>
+      </ImageContainer>
     </div>
   );
 }
@@ -45,33 +33,31 @@ const Quantity = styled.h3`
 const QuantityContainer = styled.div`
   display: flex;
   height: 20px;
-  justify-content: space-around;
-  align-items: center;
-`;
-
-const InfoContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
+ 
+   
 `;
 
 const QtyButton = styled.button`
   height: 20px;
   border-radius: 3px;
-  &:hover{
-    color:blue;
-    background-color:red;
+  &:hover {
+    color: blue;
+    background-color: red;
   }
 `;
 
 const ImageContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  max-height: 300px;
-  width: 100%;
+  flex: wrap;
+  width: 400px;
+  height: 500px;
+   
 `;
 const ProductImage = styled.img`
-  width: 95%;
-  height: 200px;
+  width: 300px;
+  height: 400px;
+  border-image: 100 round;
+  border-color: black;
+ 
 `;
 
 //questions
