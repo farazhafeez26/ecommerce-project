@@ -18,6 +18,8 @@ function App() {
         <Product imgSrc="pictures/dress.webp"></Product>
         <Product imgSrc="pictures/jacket.webp"></Product>
         <Product imgSrc="pictures/shoes.webp"></Product>
+        <Product imgSrc="pictures/jacket.webp"></Product>
+        <Product imgSrc="pictures/shoes.webp"></Product>
       </div>
     </div>
   );
