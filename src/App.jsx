@@ -1,7 +1,8 @@
 import logo from "./logo.svg";
 import "./App.css";
+import AutoComplete from "./AutoComplete";
 import Product from "./Product";
- 
+
 import styled from "styled-components";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <MainTitle> Das Flea Bazaar </MainTitle>
 
       <SearchBar placeholder="🔍 Search" type="text"></SearchBar>
+      <AutoComplete>  </AutoComplete>
 
       <div className="container">
         <Product imgSrc=" pictures/dress.webp"></Product>
@@ -18,8 +20,7 @@ function App() {
         <Product imgSrc="pictures/dress.webp"></Product>
         <Product imgSrc="pictures/jacket.webp"></Product>
         <Product imgSrc="pictures/shoes.webp"></Product>
-        <Product imgSrc="pictures/jacket.webp"></Product>
-        <Product imgSrc="pictures/shoes.webp"></Product>
+      
       </div>
     </div>
   );
