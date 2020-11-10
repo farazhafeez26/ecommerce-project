@@ -43,16 +43,18 @@ class AutoComplete extends React.Component {
       });
     }
   }
-
-
-  onClickItem(){
+  onClickItem(event){
     
+    this.setState({
+      ...this,state,
+      searchQuery:showItems,
+    });
 
-
+  }
       // Homework
       // Hide the dropdown
       // add the content of the dropdown to the searh bar
-  }
+   
 
   render() {
     const { showDropdown, showItems, allItems } = this.state; // inline deconstruction
