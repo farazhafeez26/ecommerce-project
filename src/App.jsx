@@ -2,10 +2,30 @@ import logo from "./logo.svg";
 import "./App.css";
 import AutoComplete from "./AutoComplete";
 import Product from "./Product";
+import { useState } from "react";
 
 import styled from "styled-components";
 
+const fullProductList = [
+  { imgSrc: "pictures/dress.webp", price: 20 },
+
+  { imgSrc: "pictures/Black boots.webp", price: 20, category: "Women" },
+  { imgSrc: "pictures/black sweater.webp", price: 20, category: "Men" },
+  { imgSrc: "pictures/dress.webp", price: 20 },
+  { imgSrc: "pictures/dress.webp", price: 20 },
+  { imgSrc: "pictures/jacket.webp", price: 20 },
+  { imgSrc: "pictures/jacket.webp", price: 50 },
+  { imgSrc: "pictures/jacket.webp", price: 30 },
+  { imgSrc: "pictures/shoes.webp", price: 20 },
+  { imgSrc: "pictures/black sweater.webp", price: 20, category: "Men" },
+];
+
+
+
 function App() {
+  const [productsDisplayed, updateProductList] = useState(fullProductList); //hook
+
+  
   return (
     <div className="App">
       <MainTitle> Das Flea Bazaar </MainTitle>
@@ -14,12 +34,8 @@ function App() {
       <AutoComplete>  </AutoComplete>
 
       <div className="container">
-        <Product imgSrc=" pictures/dress.webp"></Product>
-        <Product imgSrc="pictures/Black boots.webp"></Product>
-        <Product imgSrc="pictures/black sweater.webp"></Product>
-        <Product imgSrc="pictures/dress.webp"></Product>
-        <Product imgSrc="pictures/jacket.webp"></Product>
-        <Product imgSrc="pictures/shoes.webp"></Product>
+        {productsDisplayed.map((product) => (<Product imgSrc={product.imgSrc} price={product.price}></Product>))}
+
       
       </div>
     </div>
@@ -45,4 +61,7 @@ export const test = "test";
 
 export default App;
 
+// TODO: Add a font and assigned it to all the elements in index.html
+// TODO: Add a font and assigned it to all the elements in index.html
+// TODO: Add a font and assigned it to all the elements in index.html
 // TODO: Add a font and assigned it to all the elements in index.html

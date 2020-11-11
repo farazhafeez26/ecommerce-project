@@ -12,6 +12,8 @@ export default function Product(props) {
       <ImageContainer>
         <ProductImage src={props.imgSrc}></ProductImage>
 
+        <Price value={props.price}> </Price>
+
         <QuantityContainer>
           <QtyButton onClick={() => setQuantity(quantity + 1)}>
             Add to cart
@@ -32,9 +34,7 @@ const Quantity = styled.h3`
 
 const QuantityContainer = styled.div`
   display: flex;
-  height: 20px;
- 
-   
+  height: 15px;
 `;
 
 const QtyButton = styled.button`
@@ -50,14 +50,12 @@ const ImageContainer = styled.div`
   flex: wrap;
   width: 400px;
   height: 500px;
-   
 `;
 const ProductImage = styled.img`
   width: 300px;
   height: 400px;
   border-image: 100 round;
   border-color: black;
- 
 `;
 
 //questions
