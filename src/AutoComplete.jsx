@@ -13,10 +13,11 @@ class AutoComplete extends React.Component {
       allItems: ["Men", "Men Shirts", "Men Shoes", "Women", "Children","Summer Wear","Winter collection"] ,
       showItems: ["Men", "Women", "Children","Summer Wear","Winter collection"],
       showDropdown: false,
+      searchQueryValue: ""
     };
 
     // connecting the this object inside onChange to the class instance
-    this.onChange = this.onChange.bind(this);
+    // this.onChange = this.onChange.bind(this);
   }
 
   onChange(event) {
@@ -27,6 +28,7 @@ class AutoComplete extends React.Component {
       this.setState({
         ...this.state,
         showDropdown: false,
+        searchQueryValue: searchQuery,
       });
     } else {
       // filter
@@ -40,14 +42,17 @@ class AutoComplete extends React.Component {
         ...this.state, // old state
         showDropdown: true,
         showItems: newShownItems,
+        searchQueryValue: searchQuery,
       });
     }
   }
-  onClickItem(event){
-    
+  
+  onClickItem(event,item){
+    console.log(item)
     this.setState({
-      ...this,state,
-      searchQuery:showItems,
+      ...this.state,
+      searchQueryValue:item,
+      showDropdown:false
     });
 
   }
@@ -57,11 +62,12 @@ class AutoComplete extends React.Component {
    
 
   render() {
-    const { showDropdown, showItems, allItems } = this.state; // inline deconstruction
+    const { showDropdown, showItems, allItems, searchQueryValue } = this.state; // inline deconstruction
     return (
       <div>
         <InputField
           type="text"
+          value={searchQueryValue}
           placeholder="category"
           onChange={(e) => this.onChange(e)} //event listener
         />
@@ -70,7 +76,7 @@ class AutoComplete extends React.Component {
         {showDropdown && (
           <DropDownContainer>
             {showItems.map((item) => (
-              <ItemDisplay onClick={(e) => (this.onClickItem(e))}>{item}</ItemDisplay>
+              <ItemDisplay onClick={(e) => (this.onClickItem(e, item))}>{item}</ItemDisplay>
             ))}
           </DropDownContainer>
         )}
@@ -99,3 +105,4 @@ const ItemDisplay = styled.div`
     background-color: red
   }
 `;
+ 
