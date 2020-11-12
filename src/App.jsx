@@ -12,10 +12,10 @@ const fullProductList = [
   { imgSrc: "pictures/Black boots.webp", price: 20, category: "Women" },
   { imgSrc: "pictures/black sweater.webp", price: 20, category: "Men" },
   { imgSrc: "pictures/dress.webp", price: 20 },
-  { imgSrc: "pictures/dress.webp", price: 20 },
+  { imgSrc: "pictures/shoes.webp", price: 20 },
   { imgSrc: "pictures/jacket.webp", price: 20 },
   { imgSrc: "pictures/jacket.webp", price: 50 },
-  { imgSrc: "pictures/jacket.webp", price: 30 },
+  { imgSrc: "pictures/Black boots.webp", price: 30 },
   { imgSrc: "pictures/shoes.webp", price: 20 },
   { imgSrc: "pictures/black sweater.webp", price: 20, category: "Men" },
 ];
