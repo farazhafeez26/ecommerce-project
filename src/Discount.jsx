@@ -8,7 +8,7 @@ const Discount = () => {
     setHasDiscount(!hasDiscount);
   };
   const handleDiscountClick = () => {
-    setDiscount(discount + 20);
+    setDiscount(discount + 10);
   };
 
   return (
@@ -21,3 +21,5 @@ const Discount = () => {
 };
 
 export default Discount;
+
+ 
