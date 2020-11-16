@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-
 import AutoComplete from "./AutoComplete";
 import Product from "./Product";
 import Discount from "./Discount";
 import logo from "./logo.svg";
 import "./App.css";
 import discount from "./Discount";
-
+import Qty from  "./Qty";
 const fullProductList = [
   { imgSrc: "pictures/dress.webp", price: 20 },
 
@@ -34,6 +33,7 @@ function App() {
       <SearchBar placeholder="🔍 Search" type="text" />
       <AutoComplete />
       <Discount />
+      <Qty />
       <div className="container">
         {productsDisplayed.map((product) => (
           <Product imgSrc={product.imgSrc} price={product.price}></Product>
